@@ -50,6 +50,7 @@ const myself = new Employee('lucas', 'leszczynski','blabla@gmail.com', 36);
 console.log(myself.makeWidget());
 
 
+
 ////////// PROBLEM 2 //////////
 
 /*
@@ -79,11 +80,24 @@ class Manager extends Employee {
   }
 
   fire(index) {
-    
+    this
+    this.reports.filter((employee, id) => {
+      const employeeID = id + 1;
+     return this.reports = employee.index !== employeeID
+    })
   }
 
 }
 
+const menago = new Manager('uyuy', 'leszczyyuyunski','blabla@gmail.com', 39);
+
+// console.log(menago.hire(myself));
+
+console.log(menago)
+
+menago.fire(1)
+
+console.log(menago)
 
 
 ////////// PROBLEM 3 //////////
