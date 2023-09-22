@@ -31,6 +31,23 @@
 
 //Code Here
 
+class Employee {
+  constructor(first_name, last_name, email, age){
+    this.first_name = first_name;
+    this.last_name = last_name;
+    this.email = email;
+    this.age = age;
+    this.word_widget = 'Widget'
+  }
+
+  makeWidget(){
+    return `${this.first_name} ${this.last_name} ${this.word_widget}`
+  }
+}
+
+const myself = new Employee('lucas', 'leszczynski','blabla@gmail.com', 36);
+
+console.log(myself.makeWidget());
 
 
 ////////// PROBLEM 2 //////////
@@ -50,6 +67,22 @@
 */
 
 //Code Here
+
+class Manager extends Employee {
+  constructor(first_name, last_name, email, age){
+    super(first_name, last_name, email, age);
+    this.reports = [];
+  }
+
+  hire(employee){
+    this.reports.push(employee)
+  }
+
+  fire(index) {
+    
+  }
+
+}
 
 
 
